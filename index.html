@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <!-- end font -->
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/vendors/bootstrap/bootstrap.min.css">
+    <!-- end bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="assets/vendors/aos/aos.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Eminem</title>
+</head>
+<body>
+    <div class="cover">
+        <span class="loader">Loading</span>
+    </div>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="contanerNav">
+        <a class="navbar-brand animate__animated animate__heartBeat" href="#">Eminem</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Collaborations">Collaborations</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="#Popular">Popular</a>
+            </li>
+            </ul>
+            
+            <button class="btn btn-outline">Poster</button>
+            
+        </div>
+        </div>
+    </nav>
+    <section id="home" class="section1 mt-5">
+        <div class="contaner">
+            <div class="row">
+                <div data-aos="fade-right" data-aos-delay="300" class="sec1Img col-lg-6 col-md-12 ">
+                    <img src="assets/images/Eminem.png" onclick="openImage(this.src)" alt="">
+                </div>
+                <div data-aos="fade-left" data-aos-delay="500" class="sec1txt col-lg-6 col-md-12 d-flex flex-column align-items-center text-center">
+                    <h2>OFTEN IMITATED NEVER DUPLICATED</h2>
+                    <p class="my-lg-3">THE REAL SLIM SHADY ARE FOUND HERE.</p>
+                    <audio class="myAudio">
+                        <source src="assets/vendors/audio/Eminem - The Real Slim Shady (Lyrics) (320 kbps).mp3"
+                        type="audio/mp3">
+            
+                    </audio>
+                    <button class="btn mt-0" onclick="playAudio(0)" type="button" data-bs-toggle="tooltip"
+                        data-bs-placement="right" data-bs-title="Play/Pause Audio"
+                        data-bs-custom-class="custom-tooltip">Play Audio</button>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section id="Collaborations" class="section2 mt-5">
+        <div class="container ">
+        <h1 data-aos="zoom-in" data-aos-delay="300" class="py-4 text-center">THE Collabs</h1>
+        </div>
+        <div class="contaner">
+        <div class="row  justify-content-md-around justify-content-sm-center mb-5 pb-5">
+            <!-- card1 -->
+            <div data-aos="flip-left" data-aos-delay="500" class="card mb-5">
+            <img src="assets/images/Drake-Forever.jpg" onclick="openImage(this.src)" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">With Drake</h5>
+                <p class="card-text">Forever</p>
+                <audio class="myAudio">
+                <source src="assets/vendors/audio/Drake & Eminem - Forever (Lyrics) FT. Kanye West, Lil Wayne (320 kbps).mp3" type="audio/mp3">
+    
+                </audio>
+                <button class="btn-card mt-0" onclick="playAudio(1)" type="button" data-bs-toggle="tooltip"
+                data-bs-placement="right" data-bs-title="Play/Pause Audio"
+                data-bs-custom-class="custom-tooltip">Play Audio</button>
+            </div>
+            </div>
+            <!-- card2 -->
+            <div data-aos="flip-left" data-aos-delay="800" class="card mb-5 cardPadd">
+            <img src="assets/images/109748-eminem_rihanna_love_video_617_409.webp" onclick="openImage(this.src)" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">With Rihanna</h5>
+                <p class="card-text">Love The Way You Lie</p>
+                <audio class="myAudio">
+                <source src="assets/vendors/audio/Eminem - Love The Way You Lie (Lyrics) ft. Rihanna (320 kbps).mp3">
+    
+                </audio>
+                <button class="btn-card mt-0" onclick="playAudio(2)" data-bs-toggle="tooltip" data-bs-placement="right"
+                data-bs-title="Play/Pause Audio" data-bs-custom-class="custom-tooltip">Play Audio</button>
+            </div>
+            </div>
+            <!-- card3 -->
+            <div data-aos="flip-left" data-aos-delay="1100" class="card mb-5">
+            <img src="assets/images/maxresdefault.jpg" onclick="openImage(this.src)" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">With Snoop</span></h5>
+                <p class="card-text">From The D 2 The LBC</p>
+                <audio class="myAudio">
+                <source src="assets/vendors/audio/Eminem & Snoop Dogg - From The D 2 The LBC (Lyrics) (320 kbps).mp3" type="audio/mp3">
+    
+                </audio>
+                <button class="btn-card mt-0" onclick="playAudio(3)" data-bs-toggle="tooltip" data-bs-placement="right"
+                data-bs-title="Play/Pause Audio" data-bs-custom-class="custom-tooltip">Play Audio</button>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="section3 my-5">
+        <div class="contaner">
+            <div class="row">
+                
+                <div data-aos="fade-right" data-aos-delay="300" class="sec3txt col-lg-6 col-md-12 d-flex flex-column align-items-center text-center">
+                    <h2>Symphony of Power and Chaos!</h2>
+                    <p class="my-3">Embrace the Darkness, Unleash the Venom.</p>
+                    <audio class="myAudio">
+                        <source src="assets/vendors/audio/x2mate.com - Eminem - Venom (Lyrics) (128 kbps).mp3" type="audio/mp3">
+                    </audio>
+                    <button class="btn" onclick="playAudio(4)" data-bs-toggle="tooltip" data-bs-placement="right"
+                    data-bs-title="Play/Pause Audio" data-bs-custom-class="custom-tooltip">Play Audio</button>
+                </div>
+                <div data-aos="fade-left" data-aos-delay="500" class="sec3Img col-lg-6 col-md-12">
+                    <img src="https://i.pinimg.com/originals/49/07/9f/49079f7c357fb20d6dca5f9d8221ca44.jpg" onclick="openImage(this.src)" alt="">
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section id="Popular" class="section4 mt-5">
+        <div class="container">
+            <h1 data-aos="zoom-out" data-aos-delay="300" class=" p-3 text-center">top  songs</h1>
+        </div>
+        <div class="contaner">
+            <div class="row justify-content-between mb-5 pb-5">
+                <!-- card1 --> 
+                <div data-aos="flip-right" data-aos-delay="500" class="card mb-5">
+                    <img src="assets/images/Lose_Yourself.jpg" onclick="openImage(this.src)" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Lose Yourself</h5>
+                    <p class="card-text">2,051,744,104 Listener</p>
+                    <audio class="myAudio">
+                        <source src="assets/vendors/audio/x2mate.com - Eminem - Lose Yourself (Lyrics) (128 kbps).mp3"
+                        type="audio/mp3">
+            
+                    </audio>
+                    <button class="btn-card mt-0" onclick="playAudio(5)" type="button" data-bs-toggle="tooltip"
+                        data-bs-placement="right" data-bs-title="Play/Pause Audio"
+                        data-bs-custom-class="custom-tooltip">Play Audio</button>
+                    </div>
+                </div>
+                <!-- card2 -->
+                <div data-aos="flip-right" data-aos-delay="800" class="card mb-5">
+                    <img src="assets/images/without me.jpeg" onclick="openImage(this.src)" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Without me</h5>
+                    <p class="card-text">1,956,202,664 Listener</p>
+                    <audio class="myAudio">
+                        <source src="assets/vendors/audio/x2mate.com - Eminem - Without Me (Lyrics) (128 kbps).mp3"
+                        type="audio/mp3">
+            
+                    </audio>
+                    <button class="btn-card mt-0" onclick="playAudio(6)" type="button" data-bs-toggle="tooltip"
+                        data-bs-placement="right" data-bs-title="Play/Pause Audio"
+                        data-bs-custom-class="custom-tooltip">Play Audio</button>
+                    </div>
+                    
+                </div>
+                <!-- card3 -->
+                <div data-aos="flip-right" data-aos-delay="1100" class="card mb-5">
+                    <img src="assets/images/mockingbird-.jpg" onclick="openImage(this.src)" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Mockingbird</h5>
+                    <p class="card-text">1,509,760,423 Listener</p>
+                    <audio class="myAudio">
+                        <source src="assets/vendors/audio/x2mate.com - Eminem - Mockingbird (Lyrics) (128 kbps).mp3"
+                        type="audio/mp3">
+            
+                    </audio>
+                    <button class="audioButton btn-card mt-0" onclick="playAudio(7)" type="button" data-bs-toggle="tooltip"
+                        data-bs-placement="right" data-bs-title="Play/Pause Audio"
+                        data-bs-custom-class="custom-tooltip">Play Audio</button>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="row1 col-4">
+                    <div class="title">
+                        <h6>EMINEM MAGAZINE</h6>
+                    </div>
+                    <div class="txt">
+                        <p>Est. 2024</p>
+                    </div>
+                </div>
+                <div class="row2 col-4">
+                    <div class="title">
+                        <h6>QUICK LINKS</h6>
+                    </div>
+                    <div class="txt d-flex">
+                        <a href="#home">Home</a>
+                        <a href="#Collaborations">Collabs</a>
+                        <a href="#Popular">Popular</a>
+                    </div>
+                </div>
+                <div class="row3 col-4">
+                    <div class="title">
+                        <h6>FOLLOW US</h6>
+                    </div>
+                    <div class="txt">
+                        <a href="https://github.com/Omar-Magdelislam3327">Github</a>
+                        <a href="https://www.facebook.com/profile.php?id=100082847565376">Facebook</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy mt-5">
+            <h5 class="mb-3">© 2024 Eminem. All rights reserved.</h5>
+            <p>Template Re-made by <span>Omar Magdelislam</span> . Credit to Fady Emad for creating the Template. </p>  
+        </div>
+    </footer>
+    <button id="scrollToTopBtn" onclick="scrollToTop()"><i class="fa-solid fa-up-long"></i></button>
+
+
+    <script src="assets/vendors/jquery/jquery-3.7.1.min.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/aos/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
